@@ -34,10 +34,7 @@ python -m src.mimoe_agent "What is 6 times 7?"
 
 ## Quick Verification
 
-Example successful local run:
-
-- `python -m src.raw_chat "Hello"` -> `Hello! How can I help you today?`
-- `python -m src.mimoe_agent "What is 6 times 7?"` -> `42`
+After mimOE is up, both commands should complete without errors. Exact wording can vary by model; you should see a normal reply from `raw_chat` and a correct multiply result from `mimoe_agent` (often `42` or a line that includes it).
 
 ## Repository
 
@@ -45,4 +42,4 @@ Example successful local run:
 
 ## License
 
-MIT
+MIT — a common permissive open-source license: others may use, modify, and redistribute the code with few restrictions, as long as the license notice is preserved. Full text: <https://opensource.org/licenses/MIT>
