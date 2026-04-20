@@ -1,13 +1,14 @@
 # mimOE BYO Agent (LangChain)
 
-This is a small assignment project that runs a local agent on top of mimOE's OpenAI-compatible API.
-It includes a direct chat smoke test and a simple LangChain ReAct-style agent with one tool (`multiply`).
+Small **BYO framework** demo: LangChain `ChatOpenAI` pointed at mimOE’s **local OpenAI-compatible** inference (not cloud OpenAI).  
+`src/raw_chat.py` is a minimal OpenAI SDK sanity check; `src/mimoe_agent.py` is a tiny ReAct-style loop with one tool (`multiply`) so behavior stays easy to reason about on a small local model.
 
-## Prerequisites
+## Prerequisites (per Mimik exercise)
 
-1. Install mimOE from <https://developer.mimik.com>.
-2. Load a model in mimOE Studio (example: `smollm2-360m`).
-3. Make sure the local API is running.
+1. Install **mimOE Studio** from the early access page: <https://developer.mimik.com/mimOE-studio-early-access-download-v2> (overview: <https://developer.mimik.com>).
+2. Open **Model View**, pick a bundled model such as **SmolLM2** (`smollm2-360m`), and load it.
+3. In Model View, open **API** and note the local base URL, bearer token, and model id (defaults below match typical Studio setup).
+4. Keep the local inference service running while you run the Python commands below.
 
 Default values used by this project:
 
@@ -39,7 +40,3 @@ After mimOE is up, both commands should complete without errors. Exact wording c
 ## Repository
 
 <https://github.com/Digitallick/mimoe-byo-agent>
-
-## License
-
-MIT — a common permissive open-source license: others may use, modify, and redistribute the code with few restrictions, as long as the license notice is preserved. Full text: <https://opensource.org/licenses/MIT>
